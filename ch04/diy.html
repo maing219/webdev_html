@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         ul {
+            list-style: none;
+        }
+
+        li {
+            margin: 10px;
+        }
+
+        li label {
+            width: 80px;
+            float: left;
+        }
+
+        fieldset
+        {
+            margin: 15px;
+        }
+
+        legend {
+            font-weight: bold;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>상품 주문서</h1>
+    <fieldset>
+        <legend>개인 정보</legend>
+        <ul>
+            <li>
+                <label for="uname"><b>이름</b></label>
+                <input type="text" id="uname" required placeholder="여백없이 입력">
+            </li>
+            <li>
+                <label for="uphone"><b>연락처</b></label>
+                <input type="tel" id="uphone" placeholder="연락가능한 번호">
+            </li>
+        </ul>
+    </fieldset>
+    <fieldset>
+        <legend>배송지 정보</legend>
+        <ul>
+            <li>
+                <label for="dadress"><b>주소</b></label>
+                <input type="text" required>
+            </li>
+            <li>
+                <label for="dphone"><b>전화번호</b></label>
+                <input type="tel" name="" id="dphone" required>
+            </li>
+            <li>
+                <label for="memo"><b>메모</b></label>
+                <textarea name="" id="memo" cols="30" rows="3"></textarea>
+            </li>
+        </ul>
+    </fieldset>
+    <fieldset>
+        <legend>주문 정보</legend>
+        <ul>
+            <li>
+                <label for="order1" style="width: 200px;">과테말라 안티구아 (100g)</label>
+                <input type="number" name="" id="order1" value="0" min="0" max="5">개
+            </li>
+            <li>
+                <label for="order2" style="width: 200px;">인도네시아 만델링 (100g)</label>
+                <input type="number" name="" id="order2" value="0" min="0" max="5">개
+            </li>
+            <li>
+                <label for="order3" style="width: 200px;">탐라는도다(블렌딩) (100g)</label>
+                <input type="number" name="" id="order3" value="0" min="0" max="5">개
+            </li>
+        </ul>
+    </fieldset>
+    <input type="submit" value="주문하기">
+    <input type="reset" value="다시 작성">
+</body>
+</html>
