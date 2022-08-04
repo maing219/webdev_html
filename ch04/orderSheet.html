@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            list-style: none;
+        }
+
+        li {
+            padding: 5px;
+        }
+
+        fieldset {
+            margin: 10px;
+        }
+
+        .submit {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+    <h1>주문서 정보</h1>
+    <fieldset>
+        <legend>개인 정보</legend>
+        <ul>
+            <li>
+                <caption>이름</caption>
+                <input type="text" placeholder="공백없이 입력하세요" autofocus required>
+            </li>
+            <li>
+                <caption>메일주소</caption>
+                <input type="email" placeholder="abcd@abcd.com" required>
+            </li>
+            <li>
+                <caption>홈페이지(URL)</caption>
+                <input type="url" placeholder="공백없이 입력하세요" maxlength="50">
+            </li>
+        </ul>
+    </fieldset>
+    <fieldset>
+        <ul>
+            <li>
+                <caption>상품 검색</caption>
+                <input type="text">
+            </li>
+        </ul>
+    </fieldset>
+    <fieldset>
+        <legend>주문 정보</legend>
+        <ul>
+            <li>
+                <caption>주문 색상</caption>
+                <input type="text" id="color" list="colorList" required>
+                <datalist id="colorList">
+                    <option value="black">검정</option>
+                    <option value="gray">회색</option>
+                    <option value="olive">올리브</option>
+                    <option value="carmel">카멜</option>
+                </datalist>
+            </li>
+            <li>
+                <caption>주문 개수</caption>
+                <input type="range" value="1" min="1" max="10" required>
+            </li>
+            <li>
+                <caption>사이즈</caption>
+                <input type="number" value="85" required>
+            </li>
+        </ul>
+    </fieldset>
+    <fieldset>
+        <ul>
+            <li>
+                <caption>주문일</caption>
+                <input type="datetime-local">
+            </li>
+        </ul>
+    </fieldset>
+    <fieldset class="submit">
+        <input type="submit" value="제출">
+        <input type="reset" value="초기화">
+    </fieldset>
+    </form>
+</body>
+</html>
