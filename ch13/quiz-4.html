@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            position: relative;
+            float: left;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .container img {
+            padding: 0;
+            margin: 0;
+            z-index: 5;
+        }
+
+        .caption {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            top: 0px;
+            left: -400px;
+            background-color: rgba(0, 0, 0, 0.6);
+            transition: all 0.2s ease-in-out;
+            opacity: 1;
+            z-index: 10;
+        }
+
+        .caption p {
+            position: absolute;
+            top: 290px;
+            margin: 30px;
+            font-size: 20px;
+            color: white;
+        }
+
+        .container:hover .caption {
+            transform: translateX(400px);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="images/friends.jpg" alt="">
+        <div class="caption">
+            <p>
+                친구란,<br>
+                두 몸에 깃든 하나의 영혼
+            </p>
+        </div>
+    </div>
+</body>
+</html>
