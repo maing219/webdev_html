@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #container div {
+            width: 80%;
+            height: 500px;
+            border: 1px solid black;
+            margin: 10px;
+        }
+
+        .box1 {
+            background-color: brown;
+        }
+
+        .box2 {
+            background-color: skyblue;
+        }
+
+        .box3 {
+            background-color: darkmagenta;
+        }
+
+        .box4 {
+            background-color: greenyellow;
+        }
+
+        @media screen and (min-width: 768px) {
+            #container div {
+                width: 45%;
+            }
+        }
+
+        @media screen and (min-width: 992px) {
+            #container div {
+                width: 23%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>반응형 웹 디자인</h1>
+    <div id="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+    </div>
+</body>
+</html>
