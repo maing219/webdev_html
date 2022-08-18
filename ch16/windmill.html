@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: url('images/windmill.jpg') no-repeat right;
+            background-size: auto;
+        }
+
+        #container {
+            position: relative;
+            width: 100%;
+        }
+
+        nav li {
+            text-align: center;
+            background-color: darkblue;
+            margin-bottom: 1px;
+            list-style-type: none;
+            padding: 10px;
+        }
+
+        nav li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        header {
+            background-color: black;
+            height: 40px;
+        }
+
+        header p {
+            float: left;
+            color: white;
+            margin: 10px;
+        }
+
+        header img {
+            float: right;
+            margin: 10px;
+        }
+
+        @media screen and (min-width: 992px) {
+            header {
+                display: none;
+            }
+
+            nav {
+                width: 100%;
+                background-color: darkblue;
+                display: flex;
+                justify-content: center;
+            }
+
+            nav li {
+                margin: 0 50px;
+                float: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">WEB</a></li>
+                <li><a href="#">DESIGN</a></li>
+                <li><a href="#">MAP</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+        <header>
+            <p>MENU</p>
+            <a href="#"><img src="images/nav.png" alt=""></a>
+        </header>
+        <section>
+            
+        </section>
+    </div>
+</body>
+</html>

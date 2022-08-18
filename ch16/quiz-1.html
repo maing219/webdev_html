@@ -6,21 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrapper {
+            width: 320px;
+            margin: 0 auto;
+        }
+
         #container {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
+            width: 100%;
         }
 
         h1 {
             text-align: center;
+            margin-bottom: 10px;
         }
 
         #container div {
-            width: 80%;
-            height: 500px;
+            width: 320px;
+            height: 180px;
             border: 1px solid black;
-            margin: 10px;
+            margin-bottom: 10px;
         }
 
         .box1 {
@@ -40,25 +49,43 @@
         }
 
         @media screen and (min-width: 768px) {
+            .wrapper {
+                width: 768px;
+            }
+            
+            #container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+            
             #container div {
-                width: 45%;
+                width: 48%;
+                margin: 0.5%;
             }
         }
 
         @media screen and (min-width: 992px) {
+            .wrapper {
+                width: 1024px;
+            }
+            
             #container div {
                 width: 23%;
+                margin: 0.5%;
             }
         }
     </style>
 </head>
 <body>
-    <h1>반응형 웹 디자인</h1>
-    <div id="container">
-        <div class="box1"></div>
-        <div class="box2"></div>
-        <div class="box3"></div>
-        <div class="box4"></div>
+    <div class="wrapper">
+        <h1>반응형 웹 디자인</h1>
+        <div id="container">
+            <div class="box1"></div>
+            <div class="box2"></div>
+            <div class="box3"></div>
+            <div class="box4"></div>
+        </div>
     </div>
 </body>
 </html>
