@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            width: 960px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        legend {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            height: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+
+        .radioButton {
+            text-align: center;
+        }
+
+        .radioButton label {
+            margin-right: 15px;
+            font-size: larger;
+            line-height: 0px;
+        }
+
+        table td {
+            font-weight: 700;
+            font-size: 12px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <div class="container">
+            <h1>전입지원금 및 유공지원금 신청서</h1>
+            <select name="" id="">
+                <option value="">부서선택</option>
+                <option value="">인구정책과</option>
+                <option value="">세정과</option>
+            </select>
+            <table border="1">
+                <tr>
+                    <td colspan="7" class="radioButton">
+                        <input type="radio" name="radioButton" id="">
+                        <label for="">전입 세대</label>
+                        <input type="radio" name="radioButton" id="">
+                        <label for="">전입 직업군인∙군무원</label>
+                        <input type="radio" name="radioButton" id="">
+                        <label for="">전입 학생</label>
+                        <input type="radio" name="radioButton" id="">
+                        <label for="">유공 기관∙기업</label>
+                        <input type="radio" name="radioButton" id="">
+                        <label for="">유공 개인</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="4" style="width: 80px;">신청인</td>
+                    <td style="width: 100px;">성명<br>(기관/기업체명)</td>
+                    <td><input type="text"></td>
+                    <td style="width: 110px;">생년월일<br>(사업자등록번호)</td>
+                    <td><input type="text"></td>
+                    <td>지원대상자와관계</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>주소</td>
+                    <td colspan="5"><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>연락처</td>
+                    <td colspan="5"><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>금융기관</td>
+                    <td><input type="text"></td>
+                    <td>계좌번호</td>
+                    <td><input type="text"></td>
+                    <td>예금주</td>
+                    <td><input type="text"></td>
+                </tr>
+            </table>
+            <legend>세부신청사항</legend>
+            <table border="1">
+                <tr>
+                    <td rowspan="4">전입 세대</td>
+                    <td>관계</td>
+                    <td>성명</td>
+                    <td>생년월일</td>
+                    <td>전입일자</td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="" id="">
+                            <option value="">--선택--</option>
+                        </select>
+                    </td>
+                    <td><input type="text"></td>
+                    <td>
+                        <input type="text" placeholder="2021-02-21">
+                    </td>
+                    <td>
+                        <input type="text" placeholder="2021-02-21">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="" id="">
+                            <option value="">--선택--</option>
+                        </select>
+                    </td>
+                    <td><input type="text"></td>
+                    <td>
+                        <input type="text" placeholder="2021-02-21">
+                    </td>
+                    <td>
+                        <input type="text" placeholder="2021-02-21">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="" id="">
+                            <option value="">--선택--</option>
+                        </select>
+                    </td>
+                    <td><input type="text"></td>
+                    <td>
+                        <input type="text" placeholder="2021-02-21">
+                    </td>
+                    <td>
+                        <input type="text" placeholder="2021-02-21">
+                    </td>
+                </tr>
+            </table>
+            <table border="1">
+                <tr>
+                    <td rowspan="2" style="width: 80px;">전입<br>직업군인∙군무원<br>고등학생∙대학생</td>
+                    <td>
+                        <select name="" id="">
+                            <option value="">--선택--</option>
+                        </select>
+                    </td>
+                    <td>성명</td>
+                    <td>소속<br>(학교명/학과)</td>
+                    <td>계급<br>(학년)</td>
+                    <td>전입일자</td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td rowspan="2">유공<br>기관∙기업체∙개인</td>
+                    <td>명칭</td>
+                    <td>대표자</td>
+                    <td>소재지</td>
+                    <td colspan="2">전입실적</td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text" style="width: 80%;">명</td>
+                    <td style="text-align: center;"><button>전입실적 입력</button></td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>
